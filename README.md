@@ -8,8 +8,8 @@ An AutoHotkey script to get Linux-style window dragging and resizing.
   window.
 
 To change the keybindings, just change the `LWin & LButton` and `LWin &
-RButton` expression to something like `Alt & LButon` and `Alt & MButton` to get
-Metacity-style resizing, for example.
+RButton` expressions. For example, change them to `Alt & LButon` and `Alt &
+MButton` to get Metacity-style resizing.
 
 Script is based on the following:
 - http://www.autohotkey.com/docs/scripts/EasyWindowDrag.htm
