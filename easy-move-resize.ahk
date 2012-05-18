@@ -4,7 +4,7 @@ ListLines Off
 SetWinDelay 0
 CoordMode Mouse
 
-LWin & RButton::
+Alt & MButton::
   MouseGetPos, , , windowUnderCursor
 
   WinSet Top, , ahk_id %windowUnderCursor%
@@ -24,7 +24,7 @@ LWin & RButton::
   changeHeight := isBottomHalf ? 1 : -1
 
   loop {
-    GetKeyState buttonState, RButton, P
+    GetKeyState buttonState, MButton, P
     if buttonState = U
       break
 
@@ -41,7 +41,7 @@ LWin & RButton::
     mouseY := newMouseY
   }
 
-LWin & LButton::
+Alt & LButton::
   MouseGetPos, , , windowUnderCursor
 
   WinSet Top, , ahk_id %windowUnderCursor%
